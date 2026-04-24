@@ -1,0 +1,54 @@
+{
+  "annotations": {
+    "changelogDate": "20260424181246"
+  },
+  "applications": ["*"],
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "matricula",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength", "unique"],
+      "fieldValidateRulesMaxlength": "40",
+      "fieldValidateRulesMinlength": "4"
+    },
+    {
+      "fieldName": "fechaMatriculacion",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "activo",
+      "fieldType": "Boolean",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "fechaAlta",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "fechaBaja",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Enfermero",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "empleado",
+      "relationshipName": "empleado",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one",
+      "relationshipValidateRules": "required"
+    },
+    {
+      "otherEntityName": "turnoLaboral",
+      "relationshipName": "turnoLaboral",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

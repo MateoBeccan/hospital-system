@@ -1,0 +1,86 @@
+{
+  "annotations": {
+    "changelogDate": "20260424181247"
+  },
+  "applications": ["*"],
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "numero",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength", "unique"],
+      "fieldValidateRulesMaxlength": "40",
+      "fieldValidateRulesMinlength": "3"
+    },
+    {
+      "fieldName": "fechaApertura",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "fechaUltimaActualizacion",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "antecedentesPersonales",
+      "fieldType": "TextBlob"
+    },
+    {
+      "fieldName": "antecedentesFamiliares",
+      "fieldType": "TextBlob"
+    },
+    {
+      "fieldName": "enfermedadesPrevias",
+      "fieldType": "TextBlob"
+    },
+    {
+      "fieldName": "cirugiasPrevias",
+      "fieldType": "TextBlob"
+    },
+    {
+      "fieldName": "alergias",
+      "fieldType": "TextBlob"
+    },
+    {
+      "fieldName": "medicacionHabitual",
+      "fieldType": "TextBlob"
+    },
+    {
+      "fieldName": "habitos",
+      "fieldType": "TextBlob"
+    },
+    {
+      "fieldName": "observacionesGenerales",
+      "fieldType": "TextBlob"
+    },
+    {
+      "fieldName": "activa",
+      "fieldType": "Boolean",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "fechaCierre",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "motivoCierre",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "255"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "HistoriaClinica",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "paciente",
+      "relationshipName": "paciente",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one",
+      "relationshipValidateRules": "required"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

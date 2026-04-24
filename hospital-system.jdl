@@ -1,0 +1,255 @@
+// =====================================================
+// HOSPITAL - FASE 1
+// Núcleo administrativo, pacientes, empleados y clínica base
+// =====================================================
+
+entity TipoDocumento {
+  codigo String required minlength(2) maxlength(30) unique
+  nombre String required minlength(2) maxlength(80)
+  sigla String required minlength(2) maxlength(20) unique
+  descripcion String maxlength(255)
+  activo Boolean required
+  fechaAlta LocalDate required
+  fechaBaja LocalDate
+}
+
+entity Sexo {
+  codigo String required minlength(1) maxlength(30) unique
+  nombre String required minlength(2) maxlength(80)
+  descripcion String maxlength(255)
+  fechaAlta LocalDate required
+  fechaBaja LocalDate
+  activo Boolean required
+}
+
+entity Pais {
+  nombre String required minlength(2) maxlength(100)
+  codigoIso String required minlength(2) maxlength(3) pattern(/^[A-Z]{2,3}$/) unique
+  fechaAlta LocalDate required
+  fechaBaja LocalDate
+  activo Boolean required
+}
+
+entity Provincia {
+  nombre String required minlength(2) maxlength(100)
+  codigo String maxlength(20)
+  fechaAlta LocalDate required
+  fechaBaja LocalDate
+  activo Boolean required
+}
+
+entity Ciudad {
+  nombre String required minlength(2) maxlength(100)
+  codigo String maxlength(30) unique
+  codigoPostal String maxlength(20)
+  fechaAlta LocalDate required
+  fechaBaja LocalDate
+  activo Boolean required
+}
+
+entity Persona {
+  nombre String required minlength(2) maxlength(100)
+  apellido String required minlength(2) maxlength(100)
+  nroDocumento String required minlength(5) maxlength(30) unique
+  fechaNacimiento LocalDate
+  telefono String maxlength(30)
+  email String maxlength(191) pattern(/^[^\s@]+@[^\s@]+\.[^\s@]+$/) unique
+  direccion String maxlength(255)
+  activo Boolean required
+  fechaAlta LocalDate required
+  fechaBaja LocalDate
+}
+
+entity ContactoEmergencia {
+  nombre String required minlength(2) maxlength(150)
+  telefono String required maxlength(30)
+  parentesco String maxlength(80)
+  observaciones String maxlength(255)
+  prioridad Integer min(1) max(10) required
+  activo Boolean required
+  fechaAlta LocalDate required
+  fechaBaja LocalDate
+}
+
+entity ObraSocial {
+  codigo String required minlength(2) maxlength(30) unique
+  nombre String required minlength(2) maxlength(120)
+  telefono String maxlength(30)
+  email String maxlength(191) pattern(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)
+  direccion String maxlength(255)
+  activo Boolean required
+  fechaAlta LocalDate required
+  fechaBaja LocalDate
+}
+
+entity GrupoSanguineo {
+  codigo String required minlength(1) maxlength(10) unique
+  nombre String required minlength(1) maxlength(30)
+  descripcion String maxlength(100)
+  activo Boolean required
+  fechaAlta LocalDate required
+  fechaBaja LocalDate
+}
+
+entity FactorRh {
+  codigo String required minlength(1) maxlength(10) unique
+  nombre String required minlength(1) maxlength(30)
+  descripcion String maxlength(100)
+  activo Boolean required
+  fechaAlta LocalDate required
+  fechaBaja LocalDate
+}
+
+entity Paciente {
+  numeroHistoriaClinica String required minlength(3) maxlength(40) unique
+  alergiasGenerales TextBlob
+  observaciones TextBlob
+  fechaAlta LocalDate required
+  fechaBaja LocalDate
+  activo Boolean required
+}
+
+entity TipoEmpleado {
+  codigo String required minlength(2) maxlength(30) unique
+  nombre String required minlength(2) maxlength(80)
+  descripcion String maxlength(255)
+  fechaAlta LocalDate required
+  fechaBaja LocalDate
+  activo Boolean required
+}
+
+entity EstadoLaboral {
+  codigo String required minlength(2) maxlength(30) unique
+  nombre String required minlength(2) maxlength(80)
+  descripcion String maxlength(255)
+  fechaAlta LocalDate required
+  fechaBaja LocalDate
+  activo Boolean required
+}
+
+entity Cargo {
+  codigo String required minlength(2) maxlength(30) unique
+  nombre String required minlength(2) maxlength(80)
+  descripcion String maxlength(255)
+  activo Boolean required
+  fechaAlta LocalDate required
+  fechaBaja LocalDate
+}
+
+entity Empleado {
+  legajo String required minlength(2) maxlength(30) unique
+  fechaIngreso LocalDate required
+  fechaBaja LocalDate
+  activo Boolean required
+}
+
+entity Especialidad {
+  codigo String required minlength(2) maxlength(30) unique
+  nombre String required minlength(2) maxlength(100)
+  descripcion String maxlength(255)
+  fechaAlta LocalDate required
+  fechaBaja LocalDate
+  activa Boolean required
+}
+
+entity Medico {
+  matricula String required minlength(4) maxlength(40) unique
+  fechaMatriculacion LocalDate
+  firmaDigital String maxlength(255)
+  atiendeConsultorio Boolean required
+  activo Boolean required
+  fechaAlta LocalDate required
+  fechaBaja LocalDate
+}
+
+entity TurnoLaboral {
+  codigo String required minlength(2) maxlength(30)  unique
+  nombre String required minlength(2) maxlength(80)
+  horaInicio String required maxlength(5) pattern(/^([01]\d|2[0-3]):[0-5]\d$/)
+  horaFin String required maxlength(5) pattern(/^([01]\d|2[0-3]):[0-5]\d$/)
+  descripcion String maxlength(255)
+  activo Boolean required
+  fechaAlta LocalDate required
+  fechaBaja LocalDate
+}
+
+entity Enfermero {
+  matricula String required minlength(4) maxlength(40) unique
+  fechaMatriculacion LocalDate
+  activo Boolean required
+  fechaAlta LocalDate required
+  fechaBaja LocalDate
+}
+
+entity HistoriaClinica {
+  numero String required minlength(3) maxlength(40) unique
+  fechaApertura LocalDate required
+  fechaUltimaActualizacion LocalDate
+  antecedentesPersonales TextBlob
+  antecedentesFamiliares TextBlob
+  enfermedadesPrevias TextBlob
+  cirugiasPrevias TextBlob
+  alergias TextBlob
+  medicacionHabitual TextBlob
+  habitos TextBlob
+  observacionesGenerales TextBlob
+  activa Boolean required
+  fechaCierre LocalDate
+  motivoCierre String maxlength(255)
+}
+
+entity AntecedenteClinico {
+  titulo String required minlength(2) maxlength(100)
+  descripcion String required maxlength(255)
+  fechaRegistro LocalDate required
+  observaciones TextBlob
+  activo Boolean required
+  fechaAlta LocalDate required
+  fechaBaja LocalDate
+}
+
+// =====================================================
+// RELACIONES
+// =====================================================
+
+relationship ManyToOne {
+  Provincia{pais required} to Pais
+  Ciudad{provincia required} to Provincia
+
+
+  Persona{tipoDocumento required} to TipoDocumento
+  Persona{sexo required} to Sexo
+  Persona{ciudad} to Ciudad
+  ContactoEmergencia{persona required} to Persona
+
+  Paciente{obraSocial} to ObraSocial
+  Paciente{grupoSanguineo} to GrupoSanguineo
+  Paciente{factorRh} to FactorRh
+
+  Empleado{tipoEmpleado required} to TipoEmpleado
+  Empleado{estadoLaboral required} to EstadoLaboral
+  Empleado{cargo required} to Cargo
+
+  Medico{especialidad required} to Especialidad
+
+  Enfermero{turnoLaboral} to TurnoLaboral
+
+  AntecedenteClinico{historiaClinica required} to HistoriaClinica
+}
+
+relationship OneToOne {
+  Paciente{persona required} to Persona
+  Empleado{persona required} to Persona
+  Medico{empleado required} to Empleado
+  Enfermero{empleado required} to Empleado
+  HistoriaClinica{paciente required} to Paciente
+}
+
+// =====================================================
+// CONFIGURACION JHIPSTER
+// =====================================================
+
+dto * with mapstruct
+service * with serviceClass
+paginate * with pagination
+filter *

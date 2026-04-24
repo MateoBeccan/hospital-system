@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <!--
+        Added the constraints for entity Paciente.
+    -->
+    <changeSet id="20260424181238-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="persona_id"
+                                 baseTableName="paciente"
+                                 constraintName="fk_paciente__persona_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="persona"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="obra_social_id"
+                                 baseTableName="paciente"
+                                 constraintName="fk_paciente__obra_social_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="obra_social"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="grupo_sanguineo_id"
+                                 baseTableName="paciente"
+                                 constraintName="fk_paciente__grupo_sanguineo_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="grupo_sanguineo"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="factor_rh_id"
+                                 baseTableName="paciente"
+                                 constraintName="fk_paciente__factor_rh_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="factor_rh"
+                                 />
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,70 @@
+{
+  "annotations": {
+    "changelogDate": "20260424181238"
+  },
+  "applications": ["*"],
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "numeroHistoriaClinica",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength", "unique"],
+      "fieldValidateRulesMaxlength": "40",
+      "fieldValidateRulesMinlength": "3"
+    },
+    {
+      "fieldName": "alergiasGenerales",
+      "fieldType": "TextBlob"
+    },
+    {
+      "fieldName": "observaciones",
+      "fieldType": "TextBlob"
+    },
+    {
+      "fieldName": "fechaAlta",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "fechaBaja",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "activo",
+      "fieldType": "Boolean",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Paciente",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "persona",
+      "relationshipName": "persona",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one",
+      "relationshipValidateRules": "required"
+    },
+    {
+      "otherEntityName": "obraSocial",
+      "relationshipName": "obraSocial",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "grupoSanguineo",
+      "relationshipName": "grupoSanguineo",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "factorRh",
+      "relationshipName": "factorRh",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

@@ -33,6 +33,16 @@
     <include file="config/liquibase/changelog/20260424181246_added_entity_Enfermero.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20260424181247_added_entity_HistoriaClinica.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20260424181248_added_entity_AntecedenteClinico.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20260427155721_added_entity_EstadoTurno.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20260427155722_added_entity_CanalSolicitud.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20260427155723_added_entity_TipoDiagnostico.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20260427155724_added_entity_EstadoDiagnostico.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20260427155725_added_entity_EstadoTratamiento.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20260427155726_added_entity_Turno.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20260427155727_added_entity_Consulta.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20260427155728_added_entity_SignosVitales.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20260427155729_added_entity_Diagnostico.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20260427155730_added_entity_Tratamiento.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
     <include file="config/liquibase/changelog/20260424181231_added_entity_constraints_Provincia.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20260424181232_added_entity_constraints_Ciudad.xml" relativeToChangelogFile="false"/>
@@ -44,6 +54,11 @@
     <include file="config/liquibase/changelog/20260424181246_added_entity_constraints_Enfermero.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20260424181247_added_entity_constraints_HistoriaClinica.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20260424181248_added_entity_constraints_AntecedenteClinico.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20260427155726_added_entity_constraints_Turno.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20260427155727_added_entity_constraints_Consulta.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20260427155728_added_entity_constraints_SignosVitales.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20260427155729_added_entity_constraints_Diagnostico.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20260427155730_added_entity_constraints_Tratamiento.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>

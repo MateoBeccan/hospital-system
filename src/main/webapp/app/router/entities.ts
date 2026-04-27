@@ -85,6 +85,46 @@ const AntecedenteClinico = () => import('@/entities/antecedente-clinico/antecede
 const AntecedenteClinicoUpdate = () => import('@/entities/antecedente-clinico/antecedente-clinico-update.vue');
 const AntecedenteClinicoDetails = () => import('@/entities/antecedente-clinico/antecedente-clinico-details.vue');
 
+const EstadoTurno = () => import('@/entities/estado-turno/estado-turno.vue');
+const EstadoTurnoUpdate = () => import('@/entities/estado-turno/estado-turno-update.vue');
+const EstadoTurnoDetails = () => import('@/entities/estado-turno/estado-turno-details.vue');
+
+const CanalSolicitud = () => import('@/entities/canal-solicitud/canal-solicitud.vue');
+const CanalSolicitudUpdate = () => import('@/entities/canal-solicitud/canal-solicitud-update.vue');
+const CanalSolicitudDetails = () => import('@/entities/canal-solicitud/canal-solicitud-details.vue');
+
+const TipoDiagnostico = () => import('@/entities/tipo-diagnostico/tipo-diagnostico.vue');
+const TipoDiagnosticoUpdate = () => import('@/entities/tipo-diagnostico/tipo-diagnostico-update.vue');
+const TipoDiagnosticoDetails = () => import('@/entities/tipo-diagnostico/tipo-diagnostico-details.vue');
+
+const EstadoDiagnostico = () => import('@/entities/estado-diagnostico/estado-diagnostico.vue');
+const EstadoDiagnosticoUpdate = () => import('@/entities/estado-diagnostico/estado-diagnostico-update.vue');
+const EstadoDiagnosticoDetails = () => import('@/entities/estado-diagnostico/estado-diagnostico-details.vue');
+
+const EstadoTratamiento = () => import('@/entities/estado-tratamiento/estado-tratamiento.vue');
+const EstadoTratamientoUpdate = () => import('@/entities/estado-tratamiento/estado-tratamiento-update.vue');
+const EstadoTratamientoDetails = () => import('@/entities/estado-tratamiento/estado-tratamiento-details.vue');
+
+const Turno = () => import('@/entities/turno/turno.vue');
+const TurnoUpdate = () => import('@/entities/turno/turno-update.vue');
+const TurnoDetails = () => import('@/entities/turno/turno-details.vue');
+
+const Consulta = () => import('@/entities/consulta/consulta.vue');
+const ConsultaUpdate = () => import('@/entities/consulta/consulta-update.vue');
+const ConsultaDetails = () => import('@/entities/consulta/consulta-details.vue');
+
+const SignosVitales = () => import('@/entities/signos-vitales/signos-vitales.vue');
+const SignosVitalesUpdate = () => import('@/entities/signos-vitales/signos-vitales-update.vue');
+const SignosVitalesDetails = () => import('@/entities/signos-vitales/signos-vitales-details.vue');
+
+const Diagnostico = () => import('@/entities/diagnostico/diagnostico.vue');
+const DiagnosticoUpdate = () => import('@/entities/diagnostico/diagnostico-update.vue');
+const DiagnosticoDetails = () => import('@/entities/diagnostico/diagnostico-details.vue');
+
+const Tratamiento = () => import('@/entities/tratamiento/tratamiento.vue');
+const TratamientoUpdate = () => import('@/entities/tratamiento/tratamiento-update.vue');
+const TratamientoDetails = () => import('@/entities/tratamiento/tratamiento-details.vue');
+
 // jhipster-needle-add-entity-to-router-import - JHipster will import entities to the router here
 
 export default {
@@ -593,6 +633,246 @@ export default {
       path: 'antecedente-clinico/:antecedenteClinicoId/view',
       name: 'AntecedenteClinicoView',
       component: AntecedenteClinicoDetails,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'estado-turno',
+      name: 'EstadoTurno',
+      component: EstadoTurno,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'estado-turno/new',
+      name: 'EstadoTurnoCreate',
+      component: EstadoTurnoUpdate,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'estado-turno/:estadoTurnoId/edit',
+      name: 'EstadoTurnoEdit',
+      component: EstadoTurnoUpdate,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'estado-turno/:estadoTurnoId/view',
+      name: 'EstadoTurnoView',
+      component: EstadoTurnoDetails,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'canal-solicitud',
+      name: 'CanalSolicitud',
+      component: CanalSolicitud,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'canal-solicitud/new',
+      name: 'CanalSolicitudCreate',
+      component: CanalSolicitudUpdate,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'canal-solicitud/:canalSolicitudId/edit',
+      name: 'CanalSolicitudEdit',
+      component: CanalSolicitudUpdate,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'canal-solicitud/:canalSolicitudId/view',
+      name: 'CanalSolicitudView',
+      component: CanalSolicitudDetails,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'tipo-diagnostico',
+      name: 'TipoDiagnostico',
+      component: TipoDiagnostico,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'tipo-diagnostico/new',
+      name: 'TipoDiagnosticoCreate',
+      component: TipoDiagnosticoUpdate,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'tipo-diagnostico/:tipoDiagnosticoId/edit',
+      name: 'TipoDiagnosticoEdit',
+      component: TipoDiagnosticoUpdate,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'tipo-diagnostico/:tipoDiagnosticoId/view',
+      name: 'TipoDiagnosticoView',
+      component: TipoDiagnosticoDetails,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'estado-diagnostico',
+      name: 'EstadoDiagnostico',
+      component: EstadoDiagnostico,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'estado-diagnostico/new',
+      name: 'EstadoDiagnosticoCreate',
+      component: EstadoDiagnosticoUpdate,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'estado-diagnostico/:estadoDiagnosticoId/edit',
+      name: 'EstadoDiagnosticoEdit',
+      component: EstadoDiagnosticoUpdate,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'estado-diagnostico/:estadoDiagnosticoId/view',
+      name: 'EstadoDiagnosticoView',
+      component: EstadoDiagnosticoDetails,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'estado-tratamiento',
+      name: 'EstadoTratamiento',
+      component: EstadoTratamiento,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'estado-tratamiento/new',
+      name: 'EstadoTratamientoCreate',
+      component: EstadoTratamientoUpdate,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'estado-tratamiento/:estadoTratamientoId/edit',
+      name: 'EstadoTratamientoEdit',
+      component: EstadoTratamientoUpdate,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'estado-tratamiento/:estadoTratamientoId/view',
+      name: 'EstadoTratamientoView',
+      component: EstadoTratamientoDetails,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'turno',
+      name: 'Turno',
+      component: Turno,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'turno/new',
+      name: 'TurnoCreate',
+      component: TurnoUpdate,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'turno/:turnoId/edit',
+      name: 'TurnoEdit',
+      component: TurnoUpdate,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'turno/:turnoId/view',
+      name: 'TurnoView',
+      component: TurnoDetails,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'consulta',
+      name: 'Consulta',
+      component: Consulta,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'consulta/new',
+      name: 'ConsultaCreate',
+      component: ConsultaUpdate,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'consulta/:consultaId/edit',
+      name: 'ConsultaEdit',
+      component: ConsultaUpdate,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'consulta/:consultaId/view',
+      name: 'ConsultaView',
+      component: ConsultaDetails,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'signos-vitales',
+      name: 'SignosVitales',
+      component: SignosVitales,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'signos-vitales/new',
+      name: 'SignosVitalesCreate',
+      component: SignosVitalesUpdate,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'signos-vitales/:signosVitalesId/edit',
+      name: 'SignosVitalesEdit',
+      component: SignosVitalesUpdate,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'signos-vitales/:signosVitalesId/view',
+      name: 'SignosVitalesView',
+      component: SignosVitalesDetails,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'diagnostico',
+      name: 'Diagnostico',
+      component: Diagnostico,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'diagnostico/new',
+      name: 'DiagnosticoCreate',
+      component: DiagnosticoUpdate,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'diagnostico/:diagnosticoId/edit',
+      name: 'DiagnosticoEdit',
+      component: DiagnosticoUpdate,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'diagnostico/:diagnosticoId/view',
+      name: 'DiagnosticoView',
+      component: DiagnosticoDetails,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'tratamiento',
+      name: 'Tratamiento',
+      component: Tratamiento,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'tratamiento/new',
+      name: 'TratamientoCreate',
+      component: TratamientoUpdate,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'tratamiento/:tratamientoId/edit',
+      name: 'TratamientoEdit',
+      component: TratamientoUpdate,
+      meta: { authorities: [Authority.USER] },
+    },
+    {
+      path: 'tratamiento/:tratamientoId/view',
+      name: 'TratamientoView',
+      component: TratamientoDetails,
       meta: { authorities: [Authority.USER] },
     },
     // jhipster-needle-add-entity-to-router - JHipster will add entities to the router here

@@ -1,0 +1,144 @@
+// =====================================================
+// HOSPITAL - FASE 2
+// Turnos, consultas, diagnósticos y tratamientos
+// =====================================================
+
+entity EstadoTurno {
+  codigo String required minlength(2) maxlength(30) unique
+  nombre String required minlength(2) maxlength(80)
+  descripcion String maxlength(255)
+  activo Boolean required
+  fechaAlta LocalDate required
+  fechaBaja LocalDate
+}
+
+entity CanalSolicitud {
+  codigo String required minlength(2) maxlength(30) unique
+  nombre String required minlength(2) maxlength(80)
+  descripcion String maxlength(255)
+  activo Boolean required
+  fechaAlta LocalDate required
+  fechaBaja LocalDate
+}
+
+entity TipoDiagnostico {
+  codigo String required minlength(2) maxlength(30) unique
+  nombre String required minlength(2) maxlength(80)
+  descripcion String maxlength(255)
+  activo Boolean required
+  fechaAlta LocalDate required
+  fechaBaja LocalDate
+}
+
+entity EstadoDiagnostico {
+  codigo String required minlength(2) maxlength(30) unique
+  nombre String required minlength(2) maxlength(80)
+  descripcion String maxlength(255)
+  activo Boolean required
+  fechaAlta LocalDate required
+  fechaBaja LocalDate
+}
+
+entity EstadoTratamiento {
+  codigo String required minlength(2) maxlength(30) unique
+  nombre String required minlength(2) maxlength(80)
+  descripcion String maxlength(255)
+  activo Boolean required
+  fechaAlta LocalDate required
+  fechaBaja LocalDate
+}
+
+entity Turno {
+  codigo String required minlength(3) maxlength(40) unique
+  fechaHora Instant required
+  duracionMinutos Integer required min(5) max(240)
+  motivoConsulta String required minlength(3) maxlength(255)
+  observaciones TextBlob
+  fechaCreacion Instant required
+  activo Boolean required
+  fechaAlta LocalDate required
+  fechaBaja LocalDate
+}
+
+entity Consulta {
+  codigo String required minlength(3) maxlength(40) unique
+  fechaHoraInicio Instant required
+  fechaHoraFin Instant
+  sintomas TextBlob
+  motivoConsulta String required minlength(3) maxlength(255)
+  examenFisico TextBlob
+  observaciones TextBlob
+  indicaciones TextBlob
+  activa Boolean required
+  fechaAlta LocalDate required
+  fechaBaja LocalDate
+}
+
+entity SignosVitales {
+  fechaHoraRegistro Instant required
+  peso BigDecimal min(0)
+  talla BigDecimal min(0)
+  temperatura BigDecimal min(0)
+  presionArterial String maxlength(30)
+  frecuenciaCardiaca Integer min(0)
+  frecuenciaRespiratoria Integer min(0)
+  saturacionOxigeno Integer min(0) max(100)
+  observaciones TextBlob
+  activo Boolean required
+  fechaAlta LocalDate required
+  fechaBaja LocalDate
+}
+
+
+entity Diagnostico {
+  codigo String required minlength(3) maxlength(40) unique
+  fechaDiagnostico LocalDate required
+  descripcion String required minlength(3) maxlength(255)
+  observaciones TextBlob
+  activo Boolean required
+  fechaResolucion LocalDate
+  esPrincipal Boolean required
+  fechaAlta LocalDate required
+  fechaBaja LocalDate
+}
+
+entity Tratamiento {
+  codigo String required minlength(3) maxlength(40) unique
+  descripcion String required minlength(3) maxlength(255)
+  fechaInicio LocalDate required
+  fechaFin LocalDate
+  observaciones TextBlob
+  fechaProximaRevision LocalDate
+  activo Boolean required
+  fechaAlta LocalDate required
+  fechaBaja LocalDate
+}
+
+relationship ManyToOne {
+  Turno{paciente required} to Paciente
+  Turno{medico required} to Medico
+  Turno{especialidad required} to Especialidad
+  Turno{estadoTurno required} to EstadoTurno
+  Turno{canalSolicitud required} to CanalSolicitud
+
+
+  SignosVitales{consulta required} to Consulta
+
+
+  Consulta{paciente required} to Paciente
+  Consulta{medico required} to Medico
+  Consulta{historiaClinica required} to HistoriaClinica
+
+  Diagnostico{consulta required} to Consulta
+  Diagnostico{paciente required} to Paciente
+  Diagnostico{medico required} to Medico
+  Diagnostico{tipoDiagnostico required} to TipoDiagnostico
+  Diagnostico{estadoDiagnostico required} to EstadoDiagnostico
+
+  Tratamiento{diagnostico required} to Diagnostico
+  Tratamiento{estadoTratamiento required} to EstadoTratamiento
+}
+
+relationship OneToOne {
+  Consulta{turno} to Turno
+}

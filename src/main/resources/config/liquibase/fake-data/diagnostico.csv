@@ -1,0 +1,31 @@
+id;codigo;fecha_diagnostico;descripcion;observaciones;activo;fecha_resolucion;es_principal;fecha_alta;fecha_baja;consulta_id;paciente_id;medico_id;tipo_diagnostico_id;estado_diagnostico_id
+1;feline;2026-04-26;honorable happy-go-lucky;../fake-data/blob/hipster.txt;true;2026-04-27;false;2026-04-26;2026-04-27;1;1;1;1;1
+2;bravely;2026-04-27;before realistic;../fake-data/blob/hipster.txt;true;2026-04-27;true;2026-04-27;2026-04-27;2;2;2;2;2
+3;geez;2026-04-26;phew;../fake-data/blob/hipster.txt;false;2026-04-27;true;2026-04-27;2026-04-26;3;3;3;3;3
+4;joy;2026-04-27;so yesterday minus;../fake-data/blob/hipster.txt;true;2026-04-27;true;2026-04-26;2026-04-27;4;4;4;4;4
+5;buzzing;2026-04-26;fledgling;../fake-data/blob/hipster.txt;false;2026-04-27;true;2026-04-27;2026-04-27;5;5;5;5;5
+6;archive psst nice;2026-04-27;stupendous drive while;../fake-data/blob/hipster.txt;true;2026-04-27;true;2026-04-27;2026-04-26;6;6;6;6;6
+7;commandeer drat fortunate;2026-04-26;mysteriously spanish;../fake-data/blob/hipster.txt;true;2026-04-27;true;2026-04-27;2026-04-26;7;7;7;7;7
+8;quit out;2026-04-27;dislocate;../fake-data/blob/hipster.txt;false;2026-04-27;true;2026-04-26;2026-04-26;8;8;8;8;8
+9;with separately fashion;2026-04-27;mispronounce stable;../fake-data/blob/hipster.txt;true;2026-04-27;false;2026-04-26;2026-04-26;9;9;9;9;9
+10;gracefully;2026-04-27;steeple unethically;../fake-data/blob/hipster.txt;false;2026-04-27;false;2026-04-26;2026-04-27;10;10;10;10;10
+11;whenever;2026-04-27;chase healthily;../fake-data/blob/hipster.txt;false;2026-04-27;false;2026-04-27;2026-04-26;11;11;11;11;11
+12;incidentally along procurement;2026-04-27;voluminous against;../fake-data/blob/hipster.txt;false;2026-04-27;false;2026-04-27;2026-04-26;12;12;12;12;12
+13;ectoderm hydrolyze;2026-04-27;duh to;../fake-data/blob/hipster.txt;false;2026-04-27;true;2026-04-26;2026-04-27;13;13;13;13;13
+14;extricate incidentally beep;2026-04-27;far since;../fake-data/blob/hipster.txt;true;2026-04-26;true;2026-04-27;2026-04-27;14;14;14;14;14
+15;bah calmly qua;2026-04-27;eek gosh hence;../fake-data/blob/hipster.txt;false;2026-04-27;true;2026-04-27;2026-04-27;15;15;15;15;15
+16;judicious while since;2026-04-26;pertain;../fake-data/blob/hipster.txt;true;2026-04-27;true;2026-04-26;2026-04-27;16;16;16;16;16
+17;because;2026-04-27;when;../fake-data/blob/hipster.txt;true;2026-04-27;false;2026-04-27;2026-04-27;17;17;17;17;17
+18;astride;2026-04-27;round inside;../fake-data/blob/hipster.txt;false;2026-04-27;false;2026-04-26;2026-04-27;18;18;18;18;18
+19;jealous apud without;2026-04-27;scared;../fake-data/blob/hipster.txt;false;2026-04-27;false;2026-04-27;2026-04-26;19;19;19;19;19
+20;underpants;2026-04-27;dimly or;../fake-data/blob/hipster.txt;true;2026-04-26;true;2026-04-27;2026-04-27;20;20;20;20;20
+21;regarding voluntarily round;2026-04-26;worth solvency;../fake-data/blob/hipster.txt;false;2026-04-27;true;2026-04-26;2026-04-27;21;21;21;21;21
+22;unless whoever nautical;2026-04-26;after patiently;../fake-data/blob/hipster.txt;true;2026-04-26;true;2026-04-27;2026-04-27;22;22;22;22;22
+23;knowingly;2026-04-27;carelessly beyond parsnip;../fake-data/blob/hipster.txt;false;2026-04-27;false;2026-04-26;2026-04-27;23;23;23;23;23
+24;absent hm unbearably;2026-04-27;yet;../fake-data/blob/hipster.txt;false;2026-04-27;true;2026-04-27;2026-04-27;24;24;24;24;24
+25;governance;2026-04-26;who;../fake-data/blob/hipster.txt;true;2026-04-26;true;2026-04-27;2026-04-27;25;25;25;25;25
+26;ew ha;2026-04-27;straight cease;../fake-data/blob/hipster.txt;false;2026-04-26;false;2026-04-27;2026-04-27;26;26;26;26;26
+27;bend although;2026-04-27;appropriate;../fake-data/blob/hipster.txt;true;2026-04-26;false;2026-04-27;2026-04-27;27;27;27;27;27
+28;blacken;2026-04-27;till chasuble out;../fake-data/blob/hipster.txt;true;2026-04-26;false;2026-04-27;2026-04-27;28;28;28;28;28
+29;awareness barring;2026-04-27;er geez;../fake-data/blob/hipster.txt;false;2026-04-26;true;2026-04-27;2026-04-27;29;29;29;29;29
+30;parallel CD;2026-04-27;bookend left;../fake-data/blob/hipster.txt;false;2026-04-27;false;2026-04-27;2026-04-27;30;30;30;30;30

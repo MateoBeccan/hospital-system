@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <!--
+        Added the constraints for entity Turno.
+    -->
+    <changeSet id="20260427155726-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="paciente_id"
+                                 baseTableName="turno"
+                                 constraintName="fk_turno__paciente_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="paciente"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="medico_id"
+                                 baseTableName="turno"
+                                 constraintName="fk_turno__medico_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="medico"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="especialidad_id"
+                                 baseTableName="turno"
+                                 constraintName="fk_turno__especialidad_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="especialidad"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="estado_turno_id"
+                                 baseTableName="turno"
+                                 constraintName="fk_turno__estado_turno_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="estado_turno"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="canal_solicitud_id"
+                                 baseTableName="turno"
+                                 constraintName="fk_turno__canal_solicitud_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="canal_solicitud"
+                                 />
+    </changeSet>
+</databaseChangeLog>

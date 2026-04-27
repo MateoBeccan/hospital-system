@@ -1,0 +1,31 @@
+id;fecha_hora_registro;peso;talla;temperatura;presion_arterial;frecuencia_cardiaca;frecuencia_respiratoria;saturacion_oxigeno;observaciones;activo;fecha_alta;fecha_baja;consulta_id
+1;2026-04-26T21:31:27;31893.59;18095.32;24333.7;unimpressively presell;17914;10187;56;../fake-data/blob/hipster.txt;true;2026-04-27;2026-04-27;1
+2;2026-04-27T06:01:10;19640.97;32036.15;5062.06;provided;20214;18343;1;../fake-data/blob/hipster.txt;false;2026-04-27;2026-04-27;2
+3;2026-04-26T18:46:49;1156.76;25649.3;9167.11;powerfully;27850;27892;9;../fake-data/blob/hipster.txt;true;2026-04-27;2026-04-26;3
+4;2026-04-26T22:57:26;22067.94;18764.39;10774.91;apropos onto iridescence;31850;24087;50;../fake-data/blob/hipster.txt;true;2026-04-26;2026-04-27;4
+5;2026-04-27T15:31:10;25723.24;20790.88;32693.13;yum that;29685;8512;17;../fake-data/blob/hipster.txt;false;2026-04-27;2026-04-27;5
+6;2026-04-27T08:48:42;25541.72;473.74;8707.79;gracious yet;18580;21819;91;../fake-data/blob/hipster.txt;true;2026-04-27;2026-04-27;6
+7;2026-04-27T15:50:43;18341.17;7372.95;13299.74;revitalise;9153;21268;41;../fake-data/blob/hipster.txt;false;2026-04-26;2026-04-26;7
+8;2026-04-27T01:01:38;6401.02;5462.39;20763.33;solemnly;24906;20565;95;../fake-data/blob/hipster.txt;false;2026-04-27;2026-04-27;8
+9;2026-04-27T08:49:59;12854.48;5480.92;4025.14;pish officially;3069;3473;58;../fake-data/blob/hipster.txt;true;2026-04-26;2026-04-27;9
+10;2026-04-27T00:32:14;21908.65;18446.99;32035.18;demob grandpa upon;21431;22642;59;../fake-data/blob/hipster.txt;false;2026-04-27;2026-04-26;10
+11;2026-04-26T17:33:33;23961.27;8759.45;30617.16;quadruple;10247;4488;90;../fake-data/blob/hipster.txt;true;2026-04-27;2026-04-26;11
+12;2026-04-26T19:50:06;14032.55;23772.89;20215.59;blaring;17838;25745;89;../fake-data/blob/hipster.txt;false;2026-04-26;2026-04-27;12
+13;2026-04-27T13:22:15;9705.39;24248.32;20181.56;lightly ah;4801;20257;89;../fake-data/blob/hipster.txt;true;2026-04-27;2026-04-26;13
+14;2026-04-27T14:18:32;7726.31;15356.01;15703.76;yowza instead;11622;6539;4;../fake-data/blob/hipster.txt;true;2026-04-26;2026-04-26;14
+15;2026-04-27T14:54:30;7277.13;15113.65;17899.99;metal hoick newsletter;9355;25015;74;../fake-data/blob/hipster.txt;true;2026-04-27;2026-04-27;15
+16;2026-04-27T04:52:27;16442.21;2801.9;31786.32;cook worriedly an;28775;16557;18;../fake-data/blob/hipster.txt;true;2026-04-26;2026-04-27;16
+17;2026-04-27T14:36:59;10137.77;12360.81;22779.78;comfortable jam-packed;31407;12133;44;../fake-data/blob/hipster.txt;true;2026-04-27;2026-04-26;17
+18;2026-04-27T12:49:19;23722.33;25833.77;3077.83;who fluff;10287;11411;33;../fake-data/blob/hipster.txt;false;2026-04-26;2026-04-26;18
+19;2026-04-27T08:12:45;9327.02;18631.7;20600.22;suffice or;22415;9403;54;../fake-data/blob/hipster.txt;true;2026-04-27;2026-04-27;19
+20;2026-04-27T07:41:44;24720.39;29960;20903.21;meanwhile secondary yum;9206;13072;50;../fake-data/blob/hipster.txt;true;2026-04-27;2026-04-26;20
+21;2026-04-26T20:03:21;26635.71;26096.52;17173.63;frenetically about moist;4214;23175;55;../fake-data/blob/hipster.txt;false;2026-04-27;2026-04-27;21
+22;2026-04-26T19:29:24;21021.24;14227.91;27488.04;blissfully gosh;8580;32241;70;../fake-data/blob/hipster.txt;true;2026-04-27;2026-04-27;22
+23;2026-04-26T21:45:43;12590.87;28467.87;14944.71;agreement delightfully althoug;1315;25526;75;../fake-data/blob/hipster.txt;true;2026-04-27;2026-04-27;23
+24;2026-04-26T22:41:39;20620.05;30800.12;5213.54;blah off ouch;19651;1293;48;../fake-data/blob/hipster.txt;false;2026-04-27;2026-04-27;24
+25;2026-04-27T04:57:53;11235.08;30707.77;29090.1;midst;382;7055;99;../fake-data/blob/hipster.txt;false;2026-04-27;2026-04-27;25
+26;2026-04-26T22:01:59;4577.32;5383.85;22036.65;opposite finally;6674;27363;20;../fake-data/blob/hipster.txt;false;2026-04-26;2026-04-27;26
+27;2026-04-27T15:20:20;29299.57;25015.76;31121.43;indeed unwilling;23728;15460;80;../fake-data/blob/hipster.txt;true;2026-04-27;2026-04-26;27
+28;2026-04-27T10:58:58;30329.58;30977.73;759.01;pfft finally;2815;12103;79;../fake-data/blob/hipster.txt;true;2026-04-26;2026-04-27;28
+29;2026-04-26T19:17:16;19573;19680.54;7525.11;loosely yowza gadzooks;27468;7967;67;../fake-data/blob/hipster.txt;false;2026-04-27;2026-04-27;29
+30;2026-04-26T22:58:44;9997.67;7612.56;21756.6;unethically since;7467;25683;70;../fake-data/blob/hipster.txt;false;2026-04-27;2026-04-26;30

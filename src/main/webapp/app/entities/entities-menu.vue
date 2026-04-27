@@ -84,6 +84,46 @@
       <font-awesome-icon icon="asterisk" />
       <span>Antecedente Clinico</span>
     </b-dropdown-item>
+    <b-dropdown-item to="/estado-turno">
+      <font-awesome-icon icon="asterisk" />
+      <span>Estado Turno</span>
+    </b-dropdown-item>
+    <b-dropdown-item to="/canal-solicitud">
+      <font-awesome-icon icon="asterisk" />
+      <span>Canal Solicitud</span>
+    </b-dropdown-item>
+    <b-dropdown-item to="/tipo-diagnostico">
+      <font-awesome-icon icon="asterisk" />
+      <span>Tipo Diagnostico</span>
+    </b-dropdown-item>
+    <b-dropdown-item to="/estado-diagnostico">
+      <font-awesome-icon icon="asterisk" />
+      <span>Estado Diagnostico</span>
+    </b-dropdown-item>
+    <b-dropdown-item to="/estado-tratamiento">
+      <font-awesome-icon icon="asterisk" />
+      <span>Estado Tratamiento</span>
+    </b-dropdown-item>
+    <b-dropdown-item to="/turno">
+      <font-awesome-icon icon="asterisk" />
+      <span>Turno</span>
+    </b-dropdown-item>
+    <b-dropdown-item to="/consulta">
+      <font-awesome-icon icon="asterisk" />
+      <span>Consulta</span>
+    </b-dropdown-item>
+    <b-dropdown-item to="/signos-vitales">
+      <font-awesome-icon icon="asterisk" />
+      <span>Signos Vitales</span>
+    </b-dropdown-item>
+    <b-dropdown-item to="/diagnostico">
+      <font-awesome-icon icon="asterisk" />
+      <span>Diagnostico</span>
+    </b-dropdown-item>
+    <b-dropdown-item to="/tratamiento">
+      <font-awesome-icon icon="asterisk" />
+      <span>Tratamiento</span>
+    </b-dropdown-item>
     <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
   </div>
 </template>

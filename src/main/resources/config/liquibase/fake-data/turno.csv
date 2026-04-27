@@ -1,0 +1,31 @@
+id;codigo;fecha_hora;duracion_minutos;motivo_consulta;observaciones;fecha_creacion;activo;fecha_alta;fecha_baja;paciente_id;medico_id;especialidad_id;estado_turno_id;canal_solicitud_id
+1;rule showy meanwhile;2026-04-27T09:56:43;218;tut;../fake-data/blob/hipster.txt;2026-04-26T17:25:23;false;2026-04-26;2026-04-27;1;1;1;1;1
+2;yet;2026-04-27T05:11:55;163;the;../fake-data/blob/hipster.txt;2026-04-26T19:01:04;false;2026-04-27;2026-04-26;2;2;2;2;2
+3;blah although;2026-04-27T07:41:22;51;however;../fake-data/blob/hipster.txt;2026-04-26T19:43:55;false;2026-04-27;2026-04-27;3;3;3;3;3
+4;hepatitis that;2026-04-27T02:22:03;134;within sans sway;../fake-data/blob/hipster.txt;2026-04-27T15:13:05;false;2026-04-26;2026-04-26;4;4;4;4;4
+5;where amid magnetize;2026-04-27T08:17:16;188;for;../fake-data/blob/hipster.txt;2026-04-26T16:50:39;false;2026-04-26;2026-04-26;5;5;5;5;5
+6;phew until yet;2026-04-27T09:36:59;117;eek nun;../fake-data/blob/hipster.txt;2026-04-27T00:15:53;false;2026-04-27;2026-04-27;6;6;6;6;6
+7;throughout down marten;2026-04-27T13:11:34;28;ew fairly wholly;../fake-data/blob/hipster.txt;2026-04-27T06:32:18;false;2026-04-27;2026-04-26;7;7;7;7;7
+8;whoever;2026-04-27T01:31:39;122;likely coaxingly;../fake-data/blob/hipster.txt;2026-04-27T15:01:06;true;2026-04-27;2026-04-27;8;8;8;8;8
+9;enrich ha mechanically;2026-04-27T04:44:13;216;while brave sit;../fake-data/blob/hipster.txt;2026-04-26T21:15:02;false;2026-04-27;2026-04-27;9;9;9;9;9
+10;instead off;2026-04-27T06:17:55;111;different;../fake-data/blob/hipster.txt;2026-04-27T14:14:43;false;2026-04-26;2026-04-27;10;10;10;10;10
+11;um substantiate immediately;2026-04-26T20:44:05;154;cheap gee woot;../fake-data/blob/hipster.txt;2026-04-26T20:07:02;true;2026-04-27;2026-04-26;11;11;11;11;11
+12;reassemble;2026-04-27T13:54:56;180;next how;../fake-data/blob/hipster.txt;2026-04-27T14:17:54;false;2026-04-27;2026-04-27;12;12;12;12;12
+13;ferociously;2026-04-26T23:09:05;29;because proper;../fake-data/blob/hipster.txt;2026-04-26T16:10:13;false;2026-04-27;2026-04-27;13;13;13;13;13
+14;executor;2026-04-26T16:57:32;154;pleasant hutch;../fake-data/blob/hipster.txt;2026-04-27T01:26:57;true;2026-04-26;2026-04-27;14;14;14;14;14
+15;paintwork light;2026-04-26T18:05:07;127;after ugh;../fake-data/blob/hipster.txt;2026-04-27T14:58:35;false;2026-04-26;2026-04-27;15;15;15;15;15
+16;tremendously before loftily;2026-04-27T02:28:03;27;mothball;../fake-data/blob/hipster.txt;2026-04-26T19:29:27;false;2026-04-26;2026-04-27;16;16;16;16;16
+17;regularly dazzling upbeat;2026-04-27T02:35:58;70;although husband woot;../fake-data/blob/hipster.txt;2026-04-26T17:13:25;true;2026-04-26;2026-04-27;17;17;17;17;17
+18;and impassioned;2026-04-26T22:23:14;65;jogging;../fake-data/blob/hipster.txt;2026-04-27T03:14:28;false;2026-04-27;2026-04-26;18;18;18;18;18
+19;firsthand playfully;2026-04-27T05:04:39;137;circle;../fake-data/blob/hipster.txt;2026-04-27T08:16:53;true;2026-04-26;2026-04-27;19;19;19;19;19
+20;than;2026-04-26T18:39:42;90;how telescope rewrite;../fake-data/blob/hipster.txt;2026-04-26T22:00:04;true;2026-04-27;2026-04-27;20;20;20;20;20
+21;healthily;2026-04-27T09:37:08;161;who chops beside;../fake-data/blob/hipster.txt;2026-04-26T18:17:08;true;2026-04-27;2026-04-26;21;21;21;21;21
+22;pish pomelo;2026-04-26T19:29:49;7;repentant fit;../fake-data/blob/hipster.txt;2026-04-26T19:00:11;true;2026-04-27;2026-04-27;22;22;22;22;22
+23;fiercely tackle abaft;2026-04-26T23:12:37;49;below ouch;../fake-data/blob/hipster.txt;2026-04-26T19:42:21;true;2026-04-27;2026-04-27;23;23;23;23;23
+24;knowingly unbearably as;2026-04-26T20:16:46;10;fuzzy focused orderly;../fake-data/blob/hipster.txt;2026-04-27T11:41:42;true;2026-04-27;2026-04-27;24;24;24;24;24
+25;lest wetly upon;2026-04-26T23:11:55;159;faint but;../fake-data/blob/hipster.txt;2026-04-26T16:31:21;false;2026-04-26;2026-04-27;25;25;25;25;25
+26;past;2026-04-27T10:13:15;33;forsaken;../fake-data/blob/hipster.txt;2026-04-27T08:44:58;true;2026-04-26;2026-04-27;26;26;26;26;26
+27;sightseeing;2026-04-26T19:07:13;53;before;../fake-data/blob/hipster.txt;2026-04-27T07:33:01;false;2026-04-27;2026-04-26;27;27;27;27;27
+28;frightfully within;2026-04-26T19:59:49;70;ick busy;../fake-data/blob/hipster.txt;2026-04-26T23:19:44;true;2026-04-27;2026-04-27;28;28;28;28;28
+29;save madly;2026-04-26T16:31:17;36;seemingly phooey;../fake-data/blob/hipster.txt;2026-04-27T04:04:01;false;2026-04-27;2026-04-27;29;29;29;29;29
+30;aw into;2026-04-27T07:30:07;54;yowza potentially;../fake-data/blob/hipster.txt;2026-04-26T22:44:40;true;2026-04-26;2026-04-27;30;30;30;30;30
